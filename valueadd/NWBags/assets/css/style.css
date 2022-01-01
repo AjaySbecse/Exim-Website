@@ -1,0 +1,8 @@
+#mobileshow {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #mobileshow {
+    display: block;
+  }
+}

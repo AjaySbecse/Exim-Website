@@ -1,0 +1,11 @@
+
+      .phonelink{
+          position: fixed; /* Lock location always on the scree */
+          bottom: 0; /* Set to the bottom */
+          right: 0; /* Set to the right */
+          margin: 30px;/* Add space around background */
+      }
+      .phoneicon{
+          width: 45px; /* Set width of icon */
+          height: 45px; /* Set height of icon */
+      }
