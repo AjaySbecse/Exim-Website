@@ -49,31 +49,6 @@
     </style>
     <!-- End logo dec -->
 
-    <!-- Google Tracking Data -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGTND952KL"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-NGTND952KL');
-        
-        </script>
-    <!-- End Google Tracking Data -->
-
-
-
-<!-- Google ads conversion Tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10829601659"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10829601659');
-</script>
-
 <!-- Website views -->
 <script>
     gtag('event', 'conversion', {'send_to': 'AW-10829601659/mQ90CP3Z6YsDEPu2-qso'});
@@ -102,249 +77,78 @@
 <div>
 </div>
    <!-- Home page markup -->
-   <style>
-    * {
-box-sizing: border-box;
-}
-body {
-margin: 0;
-padding: 0;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.loading-form-container {
-width: 100%;
-height: 100vh;
-background-color: rgba(255, 255, 255, 0.7);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-display: none;
-}
-.loading-form {
-width: 500px;
-max-width: 600px;
-padding: 10px;
-height: 85%;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-border: 1px solid #333;
-box-shadow: 0px 2px 6px #787878;
-padding-top: 20px;
-}
-.loading-form-main {
-background-color: #fff8;
-padding: 40px 40px;
-}
-.img-overlay {
-position: absolute;
-top: -70px;
-width: 100%;
-display: flex;
-justify-content: center;
-overflow: hidden;
-}
-.img-overlay img {
-width: 150px;
-height: 130px;
-border-radius: 50%;
-}
-.bg-cover-top,
-.bg-cover-bottom {
-height: 12.5%;
-background-color: #333;
-background-image: url("./logo.jpeg");
-background-color: transparent;
-background-repeat: no-repeat;
-background-position: center center;
-background-size: auto;
-}
-.bg-cover-bottom {
-background-position: bottom center;
-}
-.loading-form-container h3 {
-margin: 7px 0 12px;
-display: flex;
-justify-content: space-between;
-padding: 6px;
-/* border-bottom: 2px solid #aaa; */
-}
-#close {
-font-weight: 500;
-cursor: pointer;
-}
-
-.loading-form form {
-padding: 6px;
-border-top: 2px solid #aaa;
-}
-.form-group {
-display: flex;
-flex-direction: column;
-margin-bottom: 4px;
-text-align: left;
-}
-.form-group input {
-padding: 6px;
-}
-.form-group label {
-padding: 6px 0;
-}
-.form-group textarea {
-text-align: left;
-padding: 6px;
-height: 80px;
-}
-.form-group button {
-margin-top: 10px;
-padding: 10px 6px;
-background-color: #333;
-color: #fff;
-cursor: pointer;
-border: 0;
-}
-@media (max-width: 960px) {
-.img-overlay {
-height: 120px;
-top: -70px;
-}
-.loading-form {
-height: 80%;
-padding-top: 20px;
-}
-.img-overlay img {
-height: 100%;
-width: auto;
-}
-}
-@media (max-width: 520px) {
-body {
-font-size: 0.9rem;
-}
-.loading-form {
-border: none;
-}
-.loading-form-main {
-padding: 10px;
-}
-.form-group input {
-padding: 5px;
-}
-}
-</style>
-
-  <div class="loading-form-container">
-    <div class="loading-form">
-      <!-- <div class="bg-cover-top"></div> -->
-      <div class="img-overlay">
-        <img src="./images/smalllogo.png" />
-      </div>
-      <div class="loading-form-main">
-        <h3><span>Tell us what you need</span> <span id="close">X</span></h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-          quo amet quas aspernatur neque consectetur reprehenderit earum
-          asperiores in expedita.
-        </p>
-        <form>
-          <div class="form-group">
-            <label for="prd-name">Product Name</label>
-            <input
-              type="text "
-              id="prd-name"
-              name="prd-name"
-              placeholder="Product name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="prd-qty">Quantity</label>
-            <input
-              type="text "
-              id="prd-qty"
-              name="prd-qty"
-              placeholder="Quantity"
-            />
-          </div>
-          <div class="form-group">
-            <label for="contact">Email / Whatsapp</label>
-            <input
-              type="text "
-              id="contact"
-              name="contact"
-              placeholder="Email / Whatsapp"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              placeholder="message"
-              id="message"
-              name="message"
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" id="form-submit">Next</button>
-          </div>
-        </form>
-      </div>
-      <!-- <div class="bg-cover-bottom"></div> -->
-    </div>
-  </div>
+  
   <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=AW-10829601659"
 ></script>
-<script>
-  let formContainer = document.querySelector(".loading-form-container");
-  let closeBtn = document.querySelector("#close");
-  let formBtn = document.querySelector("#form-submit");
+<link rel="stylesheet" href="css/main.css">
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof url != "undefined") {
-        window.location = url;
-      }
-    };
-    gtag("event", "conversion", {
-      send_to: "AW-10829601659/-V-qCLyogY0DEPu2-qso",
-      event_callback: callback,
-    });
-    return false;
-  }
-
-  window.onload = () => {
-    setTimeout(() => {
-      formContainer.style.display = "flex";
-      window.dataLayer = window.dataLayer || [];
-      gtag("js", new Date());
-      gtag("config", "AW-10829601659");
-    }, 5000);
-  };
-
-  closeBtn.addEventListener("click", () => {
-    formContainer.style.display = "none";
-  });
-
-  formBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    gtag_report_conversion();
-  });
-</script>
-</div>
 <!-- End Submit Requirement Form Manager -->
 
 
 </head>
 
 <body>
+    <!-- requirement from -->
+    <div class="loading-form-container">
+        <div class="loading-form">
+          <!-- <div class="bg-cover-top"></div>
+          <div class="img-overlay">
+            <img src="./images/smalllogo.png" />
+          </div> -->
+          <div class="loading-form-main">
+            <h3><span>Tell us about your requirement</span> <span id="close">X</span></h3>
+            <p>
+              Sri Ambal - We are exporting | Indian Spices | Indian Herbs | Dry Fruits | Nut Products | Fresh Fruits | Fresh Vegetables | Natural Honey | Healthy Millets | Handicrafts
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="prd-name">Product Name</label>
+                <input
+                  type="text "
+                  id="prd-name"
+                  name="prd-name"
+                  placeholder="Product name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="prd-qty">Quantity</label>
+                <input
+                  type="text "
+                  id="prd-qty"
+                  name="prd-qty"
+                  placeholder="Quantity"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact">Email / Whatsapp</label>
+                <input
+                  type="text "
+                  id="contact"
+                  name="contact"
+                  placeholder="Email / Whatsapp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  placeholder="message"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="form-submit">Send</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="bg-cover-bottom"></div> -->
+        </div>
+    </div>
+    <!-- End requirement from -->
+
+
     <div class="top">
         <div class="container">
                 <!-- Logo  -->
@@ -676,6 +480,7 @@ padding: 5px;
     </script>
     <script type="text/javascript" src="engine1/wowslider.js"></script>
     <script type="text/javascript" src="engine1/script.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     </script>
 
     <!-- Google translater -->
