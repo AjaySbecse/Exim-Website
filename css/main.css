@@ -36,7 +36,12 @@ body {
   background-color: #fff;
   padding: 40px 40px;
 }
-
+.form-group-grid {
+  display: flex;
+}
+.form-group-grid .form-group {
+  margin: 4px;
+}
 .img-overlay {
   position: absolute;
   top: -80px;

@@ -32,6 +32,6 @@ closeBtn.addEventListener("click", () => {
 });
 
 formBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   gtag_report_conversion();
 });

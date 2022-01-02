@@ -30,6 +30,9 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/menustyle.css">
 
+    <link rel="stylesheet" href="css/main.css">
+
+
     <!-- button styles -->
     <style>
         .buttons-arrange {
@@ -100,14 +103,15 @@
             <p>
               Sri Ambal - We are exporting | Indian Spices | Indian Herbs | Dry Fruits | Nut Products | Fresh Fruits | Fresh Vegetables | Natural Honey | Healthy Millets | Handicrafts
             </p>
-            <form>
+            <form  action="https://formspree.io/f/mayvnblk"
+            method="POST">
               <div class="form-group">
                 <label for="prd-name">Product Name</label>
                 <input
                   type="text "
                   id="prd-name"
-                  name="prd-name"
                   placeholder="Product name"
+                  name="message"
                 />
               </div>
               <div class="form-group">
@@ -115,18 +119,30 @@
                 <input
                   type="text "
                   id="prd-qty"
-                  name="prd-qty"
+                  name="message"
                   placeholder="Quantity"
                 />
               </div>
-              <div class="form-group">
-                <label for="contact">Email / Whatsapp</label>
-                <input
-                  type="text "
-                  id="contact"
-                  name="contact"
-                  placeholder="Email / Whatsapp"
-                />
+              <div class="form-group-grid">
+
+                <div class="form-group">
+                  <label for="contact">Email</label>
+                  <input
+                    id="contact"
+                    placeholder="Email"
+                    type="email" 
+                    name="_replyto"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact">Whatsapp</label>
+                  <input
+                    type="text "
+                    id="Whatsapp"
+                    name="message"
+                    placeholder="Whatsapp"
+                  />
+                </div>
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
@@ -145,6 +161,8 @@
         </div>
     </div>
     <!-- End requirement from -->
+    <script type="text/javascript" src="js/main.js"></script>
+
     <div class="top">
         <div class="container">
                             <!-- Logo  -->
