@@ -27,7 +27,7 @@ if(formsubmitted == null){
       window.dataLayer = window.dataLayer || [];
       gtag("js", new Date());
       gtag("config", "AW-10829601659");
-    }, 10000);
+    }, 5000);
   };
 } 
 
@@ -67,3 +67,5 @@ async function handleSubmit(event) {
 }
 form.addEventListener("submit", handleSubmit)
 
+
+// Disable button untill the fields are filled
