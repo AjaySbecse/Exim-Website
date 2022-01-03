@@ -60,10 +60,61 @@
     gtag('event', 'conversion', {'send_to': 'AW-10829601659/o2KkCNT27o0DEPu2-qso'});
   </script>
 
+ <!-- Website phone call tracking -->
+<script>
+    gtag('config', 'AW-10829601659/T7fECPv87o0DEPu2-qso', {
+      'phone_conversion_number': '+919965610028'
+    });
+  </script> 
+
+<!-- Chatbot click -->
+<!-- Event snippet for Chatbot click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10829601659/FlZkCMqE740DEPu2-qso',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+<!-- Whatsapp CLick -->
+<!-- Event snippet for WhatsApp Click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10829601659/GxrdCOKV5o0DEPu2-qso',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+
 <!-- End Google conversion tracking tracking -->
+<style>
+    @media (max-width: 767px) {
+      .hidden-mobile {
+        display: none;
+      }
+    }
+  </style>
 
 <!-- Chat Bot -->
-<script type="text/javascript">
+<script class="hidden-mobile" type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -75,6 +126,9 @@
     })();
     </script>
 <!-- End Chat Bot -->
+
+
+
 
 <!-- Submit Requirement Form Manager -->
 <div>
