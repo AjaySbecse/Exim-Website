@@ -1,161 +1,166 @@
 @font-face {
-    font-family: SourceSansPro-Regular;
-    src: url(../fonts/SourceSansPro-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/SourceSansPro-Regular.otf) format('opentype'), url(../fonts/SourceSansPro-Regular.woff) format('woff'), url(../fonts/SourceSansPro-Regular.ttf) format('truetype'), url(../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular) format('svg');
-    font-weight: 400;
-    font-style: normal
+  font-family: SourceSansPro-Regular;
+  src: url(../fonts/SourceSansPro-Regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/SourceSansPro-Regular.otf) format("opentype"),
+    url(../fonts/SourceSansPro-Regular.woff) format("woff"),
+    url(../fonts/SourceSansPro-Regular.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
 
 .toggleMenu {
-    display: none;
-    background: #77AA43;
-    padding: 10px 15px;
-    color: #fff !important;
-    width: 100%;
-    margin-bottom: 5px;
+  display: none;
+  background: #77aa43;
+  padding: 10px 15px;
+  color: #fff !important;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .nav {
-    list-style: none;
-    *zoom: 1;
-    margin-top: 25px;
-    float: right;
+  list-style: none;
+  *zoom: 1;
+  margin-top: 25px;
+  float: right;
 }
 
 .nav:before,
 .nav:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .nav:after {
-    clear: both;
+  clear: both;
 }
 
 .nav ul {
-    list-style: none;
-    width: 200px;
+  list-style: none;
+  width: 200px;
 }
 
 .nav a {
-    padding: 10px 15px;
-    color: #77AA43
+  padding: 10px 15px;
+  color: #77aa43;
 }
 
 .nav li {
-    position: relative;
+  position: relative;
 }
 
-.nav>li {
-    float: left;
-    margin: 0px 5px;
+.nav > li {
+  float: left;
+  margin: 0px 5px;
 }
 
 .active {
-    border-top: 2px solid #77AA43;
-    border-bottom: 2px solid #77AA43;
+  border-top: 2px solid #77aa43;
+  border-bottom: 2px solid #77aa43;
 }
 
-.nav>li>.parent {
-    background-image: url("../images/downArrow.png");
-    background-repeat: no-repeat;
-    background-position: right;
+.nav > li > .parent {
+  background-image: url("../images/downArrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.nav>li>a {
-    display: block;
-    font-family: SourceSansPro-Regular;
-    font-weight: bold;
+.nav > li > a {
+  display: block;
+  font-family: SourceSansPro-Regular;
+  font-weight: bold;
 }
 
 .nav li ul {
-    position: absolute;
-    left: -9999px;
-    border: 1px solid #77AA43;
+  position: absolute;
+  left: -9999px;
+  border: 1px solid #77aa43;
 }
 
-.nav>li.hover>ul {
-    left: 0;
-    padding-left: 0px;
+.nav > li.hover > ul {
+  left: 0;
+  padding-left: 0px;
 }
 
 .nav li li.hover ul {
-    left: 100%;
-    top: 0;
+  left: 100%;
+  top: 0;
 }
 
 .nav li li a {
-    font-family: SourceSansPro-Regular;
-    font-weight: bold;
-    display: block;
-    background: #fff;
-    position: relative;
-    z-index: 100;
-    border-top: 1px solid #77AA43;
+  font-family: SourceSansPro-Regular;
+  font-weight: bold;
+  display: block;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  border-top: 1px solid #77aa43;
 }
 
 .nav li li a:hover {
-    color: #fff;
-    background-color: #77AA43
+  color: #fff;
+  background-color: #77aa43;
 }
 
 .nav li li li a {
-    background: #249578;
-    z-index: 200;
-    border-top: 1px solid #1d7a62;
+  background: #249578;
+  z-index: 200;
+  border-top: 1px solid #1d7a62;
 }
 
 @media screen and (max-width: 768px) {
-    .active {
-        display: block;
-    }
-    .nav {
-        margin-top: 0px;
-    }
-    .nav>li {
-        float: none;
-    }
-    .nav>li>.parent {
-        background-position: 95% 50%;
-    }
-    .nav li li .parent {
-        background-image: url("../images/downArrow.png");
-        background-repeat: no-repeat;
-        background-position: 95% 50%;
-    }
-    .nav ul {
-        display: block;
-        width: 100%;
-    }
-    .nav>li.hover>ul,
-    .nav li li.hover ul {
-        position: static;
-    }
+  .active {
+    display: block;
+  }
+  .nav {
+    margin-top: 0px;
+  }
+  .nav > li {
+    float: none;
+  }
+  .nav > li > .parent {
+    background-position: 95% 50%;
+  }
+  .nav li li .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+  .nav ul {
+    display: block;
+    width: 100%;
+  }
+  .nav > li.hover > ul,
+  .nav li li.hover ul {
+    position: static;
+  }
 }
 
 div.pagination span.current {
-    padding: 10px 15px 10px 15px;
-    margin: 2px;
-    border: 1px solid #0eb1e6;
-    font-weight: 700;
-    background-color: #0eb1e6;
-    color: #FFF;
-    position: relative;
-    bottom: 2px
+  padding: 10px 15px 10px 15px;
+  margin: 2px;
+  border: 1px solid #0eb1e6;
+  font-weight: 700;
+  background-color: #0eb1e6;
+  color: #fff;
+  position: relative;
+  bottom: 2px;
 }
 
 div.pagination a,
 div.pagination span.disabled {
-    margin: 2px;
-    border: 1px solid #0eb1e6;
-    color: #0eb1e6;
-    position: relative;
-    bottom: 2px
+  margin: 2px;
+  border: 1px solid #0eb1e6;
+  color: #0eb1e6;
+  position: relative;
+  bottom: 2px;
 }
 
 div.pagination a {
-    padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
 }
 
 div.pagination span.disabled {
-    padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
 }

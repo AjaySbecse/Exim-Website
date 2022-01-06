@@ -27,7 +27,7 @@ if(formsubmitted == null){
       window.dataLayer = window.dataLayer || [];
       gtag("js", new Date());
       gtag("config", "AW-10829601659");
-    }, 5000);
+    }, 1000);
   };
 } 
 
