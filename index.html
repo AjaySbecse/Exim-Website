@@ -240,11 +240,28 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     display: none;
   }
 }
+        
+        #logo_div .mobile{
+            display:none;
+        }
+        
+        @media (max-width: 600px) {
+            #logo_div .mobile {
+              display: block;
+            }
+            #logo_div .desktop{
+                display:none;
+            }
+        }
+        
+        
+        
     </style>
     <!-- End logo dec -->
 
             <div class="col-md-5 logo" id="logo_div">
-                <a href="index.html"><img src="images/logo.png" height="130px" width="400px" alt="import and export business" title="" /></a>
+                <a href="index.html"><img src="images/logo.png" height="130px" width="400px" alt="import and export business" title="" class = "desktop"/></a>
+                <a href="index.html"><img src="path-of-mobile-logo" height="130px" width="400px" alt="import and export business" title="" class = "mobile"/></a>
             </div>
             <!-- Fieo membership -->
     <script type="text/javascript">
